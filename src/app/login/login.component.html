@@ -1,0 +1,10 @@
+<p>
+  login works!
+</p>
+
+<!--[1.1a]-->
+<form                  (ngSubmit)="onLogin()"       >
+  ID<input type="text"  [(ngModel)]="id" [ngModelOptions]="{standalone: true}">{{id}}<br>
+  Password<input type="text"  [(ngModel)]="password" [ngModelOptions]="{standalone: true}">{{password}}<br>
+  <input type="submit" value="Login" >
+</form>
